@@ -15,15 +15,13 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          {% if site.github.is_project_page %}
-            <nav id="main-navigation">
-              <a href="/">Directory</a> |
-              <a href="/about/">About</a>
-              <!-- the old link:
-              <a id="forkme_banner" href="{{ site.github.repository_url }}">Directory of</a>
-              -->
-            </nav>
-          {% endif %}
+          <nav id="main-navigation">
+            <a href="/">Directory</a> |
+            <a href="/about/">About</a>
+            <!-- the old link:
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">Directory of</a>
+            -->
+          </nav>
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
