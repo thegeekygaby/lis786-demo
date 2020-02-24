@@ -16,13 +16,11 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <nav id="main-navigation">
-            <a href="{{ '/' | relative_url }}">Inicio</a> |
-            <a href="{{ '/calendario/' | relative_url' }}">Calendario</a> |
-            <a href="{{ '/mapa/' | relative_url' }}">Mapa</a> |
-            <a href="{{ '/acercade/' | relative_url' }}">Acerca de</a>
-            <!-- the old link:
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">Directory of</a>
-            -->
+            <a href="{{ '/' | relative_url }}" title="Regresar al Inicio">Inicio</a> |
+            <a href="{{ '/calendario/' | relative_url' }}" title="Ver Calendario de Eventos">Calendario</a> |
+            <a href="{{ '/mapa/' | relative_url' }}" title="Ver el mapa de locales">Mapa</a> |
+            <a href="{{ '/acercade/' | relative_url' }}" title="Aprender Mas">Acerca de</a>
+            <!-- the old link:<a id="forkme_banner" href="{{ site.github.repository_url }}">Directory of</a>  -->
           </nav>
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
