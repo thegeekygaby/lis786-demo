@@ -2,45 +2,56 @@
 title: Inicio
 layout: default
 ---
-# Recursos e Organizaciones Nuevas
+## Recursos e Organizaciones Nuevas
 <em>Visitenos seguido para encontrar todos los recursos a su alcanze.</em>
 
 <!--First article-->
 <article>
 
-  <header><h3><img src="{{ 'bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://mpplibrary.org" title="Visitar pagina de la Biblioteca Melrose Park">Biblioteca Melrose Park</a></h3></header>
+  <header><h3 id="library"><img src="{{ '/assets/images/bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://mpplibrary.org" title="Visitar pagina de la Biblioteca Melrose Park">Biblioteca Melrose Park</a></h3></header>
 
-  <section> 801 N Broadway, Melrose Park, IL 60160 </section>
+  <address> 801 N Broadway, Melrose Park, IL 60160 </address>
 
-  <br>
 
-  <section>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+  <p>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <br>
+  Categorias:
+    <ul id="tags">
+      <li>biblioteca</li>
+      <li>tipo1</li>
+      <li>tipo2</li>
+    </ul>
 
-  <section>Categorias: biblioteca, tipo1, tipo2</section>
-
-</article><br>
+</article>
 
 <!--Second Article-->
 <article>
-  <header><h3><img src="{{ 'bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://www.maywoodlibrary.org" title="Visitar pagina de la Biblioteca Maywood">Biblioteca de Maywood</a></h3></header>
-  <section>121 S 5th Ave, Maywood, IL 60153</section>
-  <br>
-  <section>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+  <header><h3 id="library"><img src="{{ '/assets/images/bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://www.maywoodlibrary.org" title="Visitar pagina de la Biblioteca Maywood">Biblioteca de Maywood</a></h3></header>
+  <address>121 S 5th Ave, Maywood, IL 60153</address>
+  <p>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <br>
 
-  <section>Categorias: biblioteca, tipo2, tipo3</section>
-</article><br>
+  Categorias:
+    <ul id="tags">
+      <li>biblioteca</li>
+      <li>tipo2</li>
+      <li>tipo3</li>
+    </ul>
+
+</article>
 
 <!--Third Article-->
 <article>
-  <header><h3><img src="{{ 'bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://www.bellwoodlibrary.org" title="Visitar pagina de la Biblioteca Bellwood">Biblioteca de Bellwood</a></h3></header>
-  <section>600 Bohland Ave, Bellwood, IL 60104</section>
-  <br>
-  <section>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+  <header><h3 id="library"><img src="{{ '/assets/images/bookicon.png' | relative_url }}" alt="Book Icon" height="30" width="30"><a href="https://www.bellwoodlibrary.org" title="Visitar pagina de la Biblioteca Bellwood">Biblioteca de Bellwood</a></h3></header>
+  <address>600 Bohland Ave, Bellwood, IL 60104</address>
 
-  <br>
+  <p>Informacion sobre el recurso: ¿que servicios propone? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <section>Categorias: biblioteca, tipo3, tipo4</section>
+
+  Categorias:
+    <ul id="tags">
+      <li>biblioteca</li>
+      <li>tipo3</li>
+      <li>tipo4</li>
+    </ul>
+</article>

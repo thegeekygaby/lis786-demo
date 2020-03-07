@@ -1,0 +1,44 @@
+---
+---
+
+//Modifications to HEADER
+#header_wrap {
+  background: #d1d1d1;
+  color:#000000;
+  text-align: center;
+}
+
+#project_title {
+  color:#000000;
+  text-shadow: none;
+  padding-bottom:0.5em;
+  line-height: 1.25em;
+}
+
+.nav a {
+  padding: 0.25em 1em;
+  margin:0.5em .75em;
+  color: #fff;
+  background-color: #000;
+}
+
+//Changes to Main Content
+#main_content a {
+  color: blue;
+}
+
+//Article Formatting
+h3#library {
+  background-image:url("{{ 'assets/images/bookicon.png' | relative_url }}"); //still working on it
+  //background-color:#ff0000;
+}
+
+ul#tags li {
+  display:inline;
+  font-style:italic;
+}
+
+//Footer
+footer {
+  text-align: left;
+}

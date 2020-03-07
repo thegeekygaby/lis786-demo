@@ -1,32 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
-{% seo %}
-  </head>
+  {% include head.html %}
 
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <nav id="main-navigation">
-            <a href="{{ '/' | relative_url }}" title="Regresar al Inicio">Inicio</a> |
-            <a href="{{ '/calendario/' | relative_url' }}" title="Ver Calendario de Eventos">Calendario</a> |
-            <a href="{{ '/mapa/' | relative_url' }}" title="Ver el mapa de locales">Mapa</a> |
-            <a href="{{ '/acercade/' | relative_url' }}" title="Aprender Mas">Acerca de</a>
-            <!-- the old link:<a id="forkme_banner" href="{{ site.github.repository_url }}">Directory of</a>  -->
-          </nav>
-
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-        </header>
-    </div>
+    {% include page_header.html %}
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
@@ -36,14 +15,7 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    {% include footer.html %}
 
     {% if site.google_analytics %}
       <script>
@@ -55,5 +27,7 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    {% include js.html %}
   </body>
 </html>
