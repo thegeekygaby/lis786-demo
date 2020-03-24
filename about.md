@@ -16,8 +16,8 @@ permalink: /acercade/
   *This site will serve as a repository to bring together education-related resources offered to Spanish-speakers by libraries in the area, as well as nonprofits. Even though this information might already be advertised by the organizing entity, this webpage will pool together these resources and display all the pertinent information in Spanish. This will help local members of the community more aware of the services offered and will help them on their journey to be more empowered citizens.*
 </div>
 
-<div class="col-md-4" markdown="1">
-<img src="/assets/images/piday.jpg" class="img-fluid rounded" alt="Foto de Gaby durante un programa en su biblioteca.">
+<div class="col-md-4" markdown="1"> 
+<img src="{{ '/assets/images/piday.jpg' | relative_url }}" class="img-fluid rounded" alt="Foto de Gaby durante un programa en su biblioteca.">
 </div>
 
 </div>
