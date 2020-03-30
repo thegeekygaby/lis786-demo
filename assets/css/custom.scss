@@ -27,10 +27,21 @@
   color: blue;
 }
 
-//Article Formatting
+#wip {
+  //background-color:#c9f;
+  text-align:center;
+  padding:.25em;
+  margin-bottom:2em;
+}
+
+//Article Type Formatting
 h3#library {
-  background-image:url("{{ 'assets/images/bookicon.png' | relative_url }}"); //still working on it
   //background-color:#ff0000;
+  padding-left:1.75em;
+  background-image:url('/assets/images/bookicon.png');
+  background-size: 1.35em;
+  background-position: 0em 50%;
+  background-repeat:no-repeat;
 }
 
 ul#tags li {

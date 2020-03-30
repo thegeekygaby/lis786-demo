@@ -5,6 +5,8 @@ permalink: /mapa/
 ---
 # Mapa
 
-Esta pagina tendra un mapa donde podra ver las organizaciones en su area. ¡Se le aprecia su paciencia!
+{% include wip.html %}
 
-*This page will soon hold a map to highlight relevant organizations. Thank you for your patience!*
+Esta pagina tendra un mapa donde podra ver las organizaciones en su area.
+
+*This page will soon hold a map to highlight relevant organizations.*
