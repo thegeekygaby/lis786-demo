@@ -38,7 +38,7 @@
 h3#library {
   //background-color:#ff0000;
   padding-left:1.75em;
-  background-image:url('{{ '/assets/images/bookicon.png' | relative url }}');
+  background-image:url("{{ '/assets/images/bookicon.png' | relative url }}");
   background-size: 1.35em;
   background-position: 0em 50%;
   background-repeat:no-repeat;
