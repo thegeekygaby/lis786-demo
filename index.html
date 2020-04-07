@@ -1,0 +1,45 @@
+---
+title: Inicio
+layout: default
+---
+<h2>Lista de Recursos e Organizaciones</h2>
+<p> Bienvenido a este sitio, espero que encuentre algo que le pueda ayudar. No se espante por tantos recursos, se pueden organizar por tipo y alfabéticamente con presionarle al boton indicado.</p><br>
+
+
+<div class="card card-nav-tabs card-plain">
+    <div class="card-header card-header-primary">
+        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#type" data-toggle="tab">Organizados por tipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alpha" data-toggle="tab">Organizados alfabéticamente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><div class="card-body ">
+        <div class="tab-content">
+            <div class="tab-pane active" id="type">
+              {% assign resourcetypes = site.resources | sort: "category" %}
+              {% for resource in resourcetypes %}
+                <h3 class="resource {{ resource.category }}"><a href="{{ resource.url }}" target="blank">{{ resource.title }} <small class="text-muted">{{ resource.category | upcase }}</small></a></h3>
+                <p><address>{{ resource.location }}</address><p>
+                <a href="{{ resource.website }}" target="blank">Visit their website</a>
+                <p>{{ resource.content | truncatewords: 25, '...'}}</p>
+              {% endfor %}
+            </div>
+            <div class="tab-pane" id="alpha">
+              {% for resource in site.resources %}
+                <h3 class="resource {{ resource.category }}"><a href="{{ resource.url }}" target="blank">{{ resource.title }} <small class="text-muted">{{ resource.category | upcase }}</small></a></h3>
+                <address>{{ resource.location }}</address>
+                <a href="{{ resource.website }}" target="blank">Visit their website</a>
+                <p>{{ resource.content | truncatewords: 25, '...'}}</p>
+              {% endfor %}
+            </div>
+        </div>
+    </div>
+  </div>

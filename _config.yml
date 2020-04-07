@@ -1,2 +1,6 @@
-title: Recursos en Melrose Park y sus alrededores 
+title: Recursos en Melrose Park y sus alrededores
 theme: jekyll-theme-slate
+collections:
+  resources:
+    output: true
+    layout: resource

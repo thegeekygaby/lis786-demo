@@ -22,10 +22,7 @@
   background-color: #000;
 }
 
-//Changes to Main Content
-#main_content a {
-  color: blue;
-}
+
 
 #wip {
   //background-color:#c9f;
@@ -35,19 +32,29 @@
 }
 
 //Article Type Formatting
-h3#library {
-  //background-color:#ff0000;
+h3.library.resource:before {
+  content:'';
+  background-image:url('{{ "/assets/images/libraryicon.png" | relative_url }}');
+}
+
+h3.college.resource:before {
+  content:'';
+  background-image:url('{{ "/assets/images/collegeicon.png" | relative_url }}');
+}
+
+h3.organization.resource:before {
+  content:'';
+  background-image:url('{{ "/assets/images/organizationicon.png" | relative_url }}');
+  background-size: contain;
+}
+
+h3.resource:before {
   padding-left:1.75em;
-  background-image:url("{{ '/assets/images/bookicon.png' | relative url }}");
   background-size: 1.35em;
-  background-position: 0em 50%;
+  background-position: left center;
   background-repeat:no-repeat;
 }
 
-ul#tags li {
-  display:inline;
-  font-style:italic;
-}
 
 //Footer
 footer {
