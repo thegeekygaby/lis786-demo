@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<h3 class="resource {{ page.category }}"><a href="{{ '{{ page.url }}' | relative_url }}" target="blank">{{ page.title }}</a></h3>
+<h3 class="resource {{ page.category }}">{{ page.title }}</h3>
 <address>{{ page.location }}</address>
 <a href="{{ page.website}}" target="blank">Visit their website</a>
 <p>{{ page.content }}</p>
@@ -11,7 +11,7 @@ layout: default
 
 
  <img src="https://maps.googleapis.com/maps/api/staticmap?center={{ page.location | url_encode }}
-           &zoom=13
+           &zoom=14
            &size=600x300
            &maptype=roadmap
            &markers={{ page.location | url_encode }}
