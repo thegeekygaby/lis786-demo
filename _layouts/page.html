@@ -7,7 +7,7 @@ layout: default
 <address>{{ page.location }}</address>
 <a href="{{ page.website}}" target="blank">Visit their website</a>
 <p>{{ page.content }}</p>
-<p><i>Resource type: {{ page.category | upcase }}</i></p>
+<p><i>Resource type: {{ page.category }}</i></p>
 
 
  <img src="https://maps.googleapis.com/maps/api/staticmap?center={{ page.location | url_encode }}
