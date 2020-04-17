@@ -26,7 +26,8 @@ layout: default
             <div class="tab-pane active" id="type">
               {% assign resourcetypes = site.resources | sort: "category" %}
               {% for resource in resourcetypes %}
-                <h3 class="resource {{ resource.category }}"><a href="{{ resource.url }}" target="blank">{{ resource.title }} <small class="text-muted">{{ resource.category | upcase }}</small></a></h3>
+              {% assign  %}
+                <h3 class="resource {{ resource.category }}"><a href="{{ resource.url | append:' | relative_url' }}" target="blank">{{ resource.title }} <small class="text-muted">{{ resource.category | upcase }}</small></a></h3>
                 <p><address>{{ resource.location }}</address><p>
                 <a href="{{ resource.website }}" target="blank">Visit their website</a>
                 <p>{{ resource.content | truncatewords: 25, '...'}}</p>
