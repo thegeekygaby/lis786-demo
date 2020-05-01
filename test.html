@@ -28,6 +28,14 @@ layout: default
 
         // NOTE: This uses cross-domain XHR, and may not work on older browsers.
         map.data.loadGeoJson('{{ 'map.geojson' | relative_url }}');
+
+        //Sets title using data from geoJson file
+        map.data.setStyle(function(feature) {
+            var label = feature.getProperty('title');
+            return {
+              title: label,
+            };
+        });
       }
     </script>
     <script async defer
