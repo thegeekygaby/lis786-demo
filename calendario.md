@@ -7,6 +7,4 @@ permalink: /calendario/
 
 {% include wip.html %}
 
-Esta pagina tendra un calendario muy pronto.
-
-*This page will soon hold a calendar of events.*
+Esta pagina tendra un calendario muy pronto, pero debido a la pandemia de COVID-19 y la orden quedarse en casa, se les pide que solo salgan para mandados esenciales.
